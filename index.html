@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodieApp - Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="images/logo.pnj.png" alt="FoodieApp Logo">
+      <span>FoodieApp</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#favourites">Favourites</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Find Delicious Recipes 🍽️</h1>
+      <p>Search and explore meals from around the world.</p>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for a recipe...">
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Favourites Section -->
+  <section class="favourites" id="favourites">
+    <h2>❤️ Our Favourites</h2>
+    <div class="recipe-grid">
+      <a href="https://www.themealdb.com/meal/52820" target="_blank" class="recipe-card">
+        <img src="https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg" alt="Biryani">
+        <h3>Chicken Biryani</h3>
+      </a>
+      <a href="https://www.themealdb.com/meal/52855" target="_blank" class="recipe-card">
+        <img src="https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg" alt="Pancakes">
+        <h3>Pancakes</h3>
+      </a>
+      <a href="https://www.themealdb.com/meal/52811" target="_blank" class="recipe-card">
+        <img src="https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg" alt="Pizza">
+        <h3>Margherita Pizza</h3>
+      </a>
+      <a href="https://www.themealdb.com/meal/52894" target="_blank" class="recipe-card">
+        <img src="https://www.themealdb.com/images/media/meals/tqtywx1468317395.jpg" alt="Chocolate Cake">
+        <h3>Chocolate Cake</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- Recipes Section (for search results) -->
+  <section class="recipes" id="recipes">
+    <h2>🍲 Search Results</h2>
+    <div class="recipe-grid" id="recipeGrid">
+      <!-- Search results will load here -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <b>FoodieApp</b> – your one-stop recipe finder! 🍴  
+      We bring you the best dishes from across the world, from quick snacks to gourmet meals.  
+      Whether you’re a student, a chef, or just hungry – we’ve got something for you.  
+      Start searching and let’s cook up something amazing together!
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with ❤️ by <b>Chhavi Mathur</b></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
